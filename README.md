@@ -1,4 +1,4 @@
-# 🛡️ Security Operations Center (SOC) Lab
+# Security Operations Center (SOC) Lab
 
 ## Summary
 This project simulates a real-world cyberattack lifecycle to engineer a robust defense system. I deployed a Security Information and Event Management (SIEM) solution within a segmented home lab environment to monitor, detect, and analyze live threats.
@@ -44,14 +44,17 @@ graph TD
 
     %% Traffic Flow
     Kali -.->|SSH Brute Force| Ubuntu
-    Ubuntu ==>|Log Shipping (Port 1514)| Wazuh
+    Ubuntu == "Log Shipping (Port 1514)" ==> Wazuh
 ```
 
 ## Technologies
-###Hypervisor: Proxmox VE
-###SIEM: Wazuh
-###Networking: Tailscale
-###Tools: Nmap, Hydra, Docker, Linux
+• Hypervisor: Proxmox VE 
+
+• SIEM: Wazuh
+
+• Networking: Tailscale
+
+• Tools: Nmap, Hydra, Docker, Linux
 
 ## Disclaimer
 This project is for educational purposes only. All attacks were simulated in a controlled, isolated environment owned by the author.
