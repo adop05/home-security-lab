@@ -59,7 +59,7 @@ graph TD
     end
 
     %% Networking Connections
-    Kali <== "Encrypted Tunnel (WireGuard)" ==> Ubuntu
+    Kali -.-> "Encrypted Tunnel (WireGuard)" Ubuntu
     Ubuntu <== "Log Shipping (Port 1514)" ==> Wazuh
     Kali -.->|Brute Force Attack (SSH)| Ubuntu
 
